@@ -1,0 +1,5 @@
+a b c d 4
+e f g h 2
+a b b b b b b b 8
+b b b b b b b b 10
+b a b b b b b b b b b b b 12

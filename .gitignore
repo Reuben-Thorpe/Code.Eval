@@ -1,3 +1,13 @@
+# Remove standard compile file
+run
+
+# Remove test scripts and input
+test.cxx
+test.cpp
+test.py
+test.txt
+
+
 # Compiled Object files
 *.slo
 *.lo
