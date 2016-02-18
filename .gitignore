@@ -3,6 +3,7 @@ run
 
 # Remove test scripts and input
 test.cxx
+test.sh
 test.cpp
 test.py
 test.txt
