@@ -5,9 +5,9 @@
 #include <sstream>
 #include <vector>
 #include <iterator>
-#include <string>
 
 using namespace std;
+
 
 vector<string> split(string line) {
   // Splits string by whitespaces, returns vector<string>
@@ -20,11 +20,11 @@ vector<string> split(string line) {
 }
 
 void calculate(vector<int>& data) {
-  // Calculates the share value from parsed data
+  // Calculates the share value from parsed values
   int result = 0;
-  result += data[0]*3;
-  result += data[1]*4;
-  result += data[2]*5;
+  for(int i = 0; i < 3; i++) {
+      result += data[i]*(i+3);
+  }
   result *= data[3];
 
   result = result/(data[0] + data[1] + data[2]);
@@ -33,20 +33,20 @@ void calculate(vector<int>& data) {
 }
 
 
-
-
 int main(int argc, char* argv[]) {
   ifstream file(argv[1]);
   string line;
   vector<string> parse; 
   while(getline(file, line)) {
     parse = split(line);
-    vector<int> data = {0,0,0,0};
-    data[0] = stoi(parse[1].substr(0, parse[1].size()-1));
-    data[1] = stoi(parse[3].substr(0, parse[3].size()-1));
-    data[2] = stoi(parse[5].substr(0, parse[5].size()-1));
-    data[3] = stoi(parse[7]);
-    calculate(data);
+    vector<int> values = {0,0,0,0};
+    int i = 1;
+    for(int ii = 0; i < 3; i++) {
+      values[ii] = stoi(parse[i].substr(0, parse[i].size()-1));
+      i += 2;
+    }
+    values[3] = stoi(parse[7]);
+    calculate(values);
   }
   return(0);
 }

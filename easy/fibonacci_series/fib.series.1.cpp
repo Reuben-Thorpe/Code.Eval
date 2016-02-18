@@ -1,25 +1,24 @@
+// Reuben Thorpe (2016), CodeEval [Fibonacci Series v1.0]
 #include <iostream>
 #include <fstream>
-#include <sstream>
 #include <math.h>
-#include <string>
 
+using namespace std;
 
 const float PHI = 1.61803398874989484820;
 const float SQRT5 = sqrt(5);
 
+
 float fib(float n) {
-    return(( (pow(PHI, n) - pow(-PHI, -n)) / SQRT5 ));
-    }
+  return(((pow(PHI, n) - pow(-PHI, -n)) / SQRT5));
+  }
 
 
 int main(int argc, char* argv[]) {
-  std::string line;
-  std::ifstream file(argv[1]);
-  std::stringstream buffer;
-  buffer << file.rdbuf();
-  while (getline(buffer, line)) {
-    std::cout << fib(std::stod(line)) << "\n";
+  string line;
+  ifstream file(argv[1]);
+  while (getline(file, line)) {
+    cout << fib(stod(line)) << "\n";
   }
   return 0;
 }
