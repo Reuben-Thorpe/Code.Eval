@@ -1,12 +1,8 @@
 # Remove standard compile file
 run
 
-# Remove test scripts and input
-test.cxx
-test.sh
-test.cpp
-test.py
-test.txt
+# Remove test scripts and test inputs
+test.*
 
 
 # Compiled Object files
