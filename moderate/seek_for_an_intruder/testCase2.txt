@@ -1,0 +1,8 @@
+Dotted decimal	192.0.2.235 with no leading zero.
+Dotted hexadecimal 0xc0.0x0.0x02.0xeb Each octet is individually converted to hexadecimal form.
+Dotted octal 0300.0000.0002.0353 Each octet is individually converted into octal.
+Dotted binary 11000000.00000000.00000010.11101011 Each octet is individually converted into binary.
+Binary 11000000000000000000001011101011
+Octal 030000001353
+Hexadecimal	0xC00002EB	Concatenation of the octets from the dotted hexadecimal.
+Decimal	3221226219	The 32-bit number expressed in decimal.

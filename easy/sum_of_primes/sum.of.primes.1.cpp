@@ -1,3 +1,4 @@
+// Reuben Thorpe (2016), CodeEval [Sum Of Primes v1.0]
 #include <math.h>
 #include <iostream>
 
@@ -5,7 +6,7 @@ using namespace std;
 
 
 bool isPrime (int num) {
-    // Returns true, input number is a prime
+    // Returns true if input number is a prime
     // Credit : Grey Wolf : http://www.cplusplus.com/forum/general/1125/
     if (num <=1)
         return false;
