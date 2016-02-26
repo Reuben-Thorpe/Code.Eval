@@ -1,9 +1,4 @@
-"""                  Reuben Thorpe (2016)
-    Write a program which prints all the permutations of a string in
-    alphabetical order. We consider that
-    [digits, upper case letters ,lower case letters].
-    The sorting should be performed in ascending order.
-"""
+# Reuben Thorpe (2016), CodeEval [String Permutations v1.0]
 
 from sys import argv
 from itertools import permutations as perm
