@@ -21,8 +21,6 @@ def distSub(seq, subSeq):
     print(gResult)
 
 
-
-
 def countSub(freqMatrix, depth, cut):
     """ Counts the number of sub-sequences in the position matrix.
         This function used global variable "gResult" and "gLimit"
@@ -42,8 +40,6 @@ def countSub(freqMatrix, depth, cut):
         for i in freqMatrix[depth]:
             if i > cut:
                 countSub(freqMatrix, depth+1, i)
-
-
 
 
 if __name__ == "__main__":
