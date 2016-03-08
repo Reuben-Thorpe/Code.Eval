@@ -3,7 +3,11 @@ from sys import argv
 from itertools import product
 
 
-def search(a, b):
+def getLongestCommonSub(a, b):
+    """
+    Generates all possible groupings that could be in a & b
+    and then returns the longest of these subsequences.
+    """
     seeds = {char for char in a if char in b}
     while True:
         if len(seeds) == 1:
@@ -17,10 +21,12 @@ def search(a, b):
     return(result)
 
 
-def check(string, seed):
-    # check seed in a and b
+def check(string, sub):
+    """
+    Check if subSeq is in string, characters can be removed from string.
+    """
     i = 0
-    for char in seed:
+    for char in sub:
         if string.find(char, i) == -1:
             return(False)
         else:
@@ -28,15 +34,13 @@ def check(string, seed):
     return(True)
 
 
-def main(filePath):
-    data = (line.strip().split(";") for line in open(filePath, 'r') if
+
+if __name__ == "__main__":
+    data = (line.strip().split(";") for line in open(argv[1], 'r') if
             ";" in line)
 
     for a, b in data:
         if len(a) > len(b):
-            print(search(b, a))
+            print(getLongestCommonSub(b, a))
         else:
-            print(search(a, b))
-
-if __name__ == "__main__":
-    main(argv[1])
+            print(getLongestCommonSub(a, b))

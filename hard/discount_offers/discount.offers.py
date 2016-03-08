@@ -1,26 +1,8 @@
-# -*- coding: ASCII -*-
-""" Reuben Thorpe (2015)
-HUNGARIAN SOLUTION : OPTIMAL PROFIT ASSIGNMENT
-PROOF OF CONCEPT : EXTREMLY UN-OPTIMISED AND NOT READABLE, WILL UPDATE
-ONLY IN STD LIBRARY : FASTER WITH NUMPY
-
- ===== DEBUG NOTES =====
-
-SCORE = 95% [ 1 edge case ]
-PROBLEM PROBABLY IN FORMATTING OR SS CALCULATION
-TRIED :
-        Include y in consonents             : NO
-        Don't assume only letters in name   : NO
-        Exclude rounding of final ansewr    : NO
-        Empty sets                          : YES
-"""
+# Reuben Thorpe (2015), CodeEval [Discount Offer v1.0]
 from copy import deepcopy
 from itertools import product
 from fractions import gcd
 from sys import argv
-
-VOWELS = "AEIOUYaeiouy"
-CONS = "BCDFGHJKLMNPQRSTVWXZbcdfghjklmnpqrstvwxz"
 
 
 class hungarian:
@@ -287,27 +269,29 @@ def matrixSS(filePath):
 
 
 def scoreSS(name, item):
-        # Produces SS value for customer/product combination
-        letter_count = sum(1 for char in item if char in CONS+VOWELS)
-        if letter_count % 2 == 0:
-            # even
-            SS = sum(1.5 for char in name if char in VOWELS)
+    # Produces SS value for customer/product combination
+    VOWELS = "AEIOUYaeiouy"
+    CONS = "BCDFGHJKLMNPQRSTVWXZbcdfghjklmnpqrstvwxz"
 
-        else:
-            # Not even
-            SS = sum(1 for char in name if char in CONS)
+    letter_count = sum(1 for char in item if char in CONS+VOWELS)
+    if letter_count % 2 == 0:
+        # even
+        SS = sum(1.5 for char in name if char in VOWELS)
 
-        if gcd(len(name), letter_count) != 1:
-            # Common factor multiplier
-            SS *= 1.5
+    else:
+        # Not even
+        SS = sum(1 for char in name if char in CONS)
 
-        return(SS)
+    if gcd(len(name), letter_count) != 1:
+        # Common factor multiplier
+        SS *= 1.5
+
+    return(SS)
 
 
 if __name__ == "__main__":
-
     for matrix in matrixSS(argv[1]):
-            if matrix is None:
-                print("0.00")
-            else:
-                print("%.2f" % hungarian(matrix).search('profit'))
+        if matrix is None:
+            print("0.00")
+        else:
+            print("%.2f" % hungarian(matrix).search('profit'))

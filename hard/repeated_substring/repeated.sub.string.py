@@ -1,5 +1,4 @@
 # Reuben Thorpe (2016), CodeEval [Repeated Sub String v1.0]
-from itertools import combinations
 from sys import argv
 
 
@@ -21,10 +20,6 @@ def findSubString(line):
     return("NONE")
 
 
-def main(fileName):
-    for line in open(fileName, "r"):
-        print(findSubString(line))
-
-
 if __name__ == "__main__":
-    main(argv[1])
+    for line in open(argv[1], "r"):
+        print(findSubString(line))

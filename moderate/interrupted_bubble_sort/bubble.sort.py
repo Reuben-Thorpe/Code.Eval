@@ -1,4 +1,4 @@
-# Reuben Thorpe (2015)
+# Reuben Thorpe (2015), CodeEval [Bubble Sort v1.0]
 from sys import argv
 
 

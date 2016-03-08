@@ -2,6 +2,7 @@
 from sys import argv
 import os
 
+
 byteSize = os.path.getsize(argv[1])
 print(byteSize)
 

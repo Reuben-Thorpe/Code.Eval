@@ -1,4 +1,4 @@
-# Reuben Thorpe (2016), String Search
+# Reuben Thorpe (2016), codeEval [String Search v1.0]
 from sys import argv
 
 

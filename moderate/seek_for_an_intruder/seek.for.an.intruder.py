@@ -8,7 +8,9 @@ import re
 
 
 def findHacker(dump):
-    # Find the most freqently occuring IP in a text dump
+    """
+    Find the most freqently occuring IP in a text dump.
+    """
 
     dotDec = r"(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}" \
              "(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"
@@ -42,7 +44,9 @@ def findHacker(dump):
 
 
 def convertLedger(tmpLedger, mode):
-    # Converts the IP keys of a dictionary to dot decimal form
+    """
+    Converts the IP keys of a dictionary to dot decimal form.
+    """
     if mode is "dotDec":
         pass
 
@@ -98,7 +102,9 @@ def convertLedger(tmpLedger, mode):
 
 
 def makeTmpLedger(IPS):
-    # Creates a temporary frequency dictionary
+    """
+    Creates a temporary frequency dictionary.
+    """
     tmpLedger = {}
     for IP in IPS:
         if IP not in tmpLedger:
@@ -110,7 +116,9 @@ def makeTmpLedger(IPS):
 
 
 def merge(masterLedger, tmpLedger):
-    # Merge two frequency dictionaries
+    """
+    Merge two frequency dictionaries.
+    """
     for IP in tmpLedger:
         if IP not in masterLedger:
             masterLedger[IP] = tmpLedger[IP]
@@ -119,7 +127,9 @@ def merge(masterLedger, tmpLedger):
 
 
 def ipFrom32(IP):
-    # Converts from 32 bit IP to standard format
+    """
+    Converts from 32 bit IP to standard format.
+    """
     try:
         IP = struct.pack('!I', IP)
         IP = socket.inet_ntoa(IP)

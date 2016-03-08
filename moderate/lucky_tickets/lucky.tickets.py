@@ -1,3 +1,4 @@
+# Reuben Thorpe (2016), CodeEval [Seek The Intruder v1.0]
 from fractions import Fraction
 from sys import argv
 

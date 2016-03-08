@@ -1,12 +1,10 @@
 # Reuben Thorpe (2016), CodeEval [String Permutations v1.0]
-
 from sys import argv
 from itertools import permutations as perm
 from math import factorial
 
 
 def sort(fileName):
-
     for line in open(fileName, 'r'):
         n = len(line.strip())
         limit = factorial(n)

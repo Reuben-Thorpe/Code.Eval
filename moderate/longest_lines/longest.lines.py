@@ -1,4 +1,4 @@
-# Reuben Thorpe (2016) Longest Lines
+# Reuben Thorpe (2016), CodeEval [Longest Lines v1.0]
 
 from sys import argv
 

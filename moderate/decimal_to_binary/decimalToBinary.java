@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class Main {
+public class decimalToBinary {
   public static void main (String []args) throws IOException {
     File file = new File(args[0]);
     Scanner s = new Scanner(file);

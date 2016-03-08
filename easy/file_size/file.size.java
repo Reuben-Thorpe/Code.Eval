@@ -1,5 +1,4 @@
 // Reuben Thorpe (2016), CodeEval [File Size v1.0]
-
 import java.io.File;
 
 public class Main {

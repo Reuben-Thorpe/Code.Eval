@@ -1,7 +1,5 @@
-// Reuben Thorpe (2016) mth to last element v1.1
-
+// Reuben Thorpe (2016), CodeEval [mth to last element v1.1]
 #include <iostream>
-#include <string>
 #include <sstream>
 #include <fstream>
 #include <algorithm>

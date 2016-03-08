@@ -1,4 +1,4 @@
-# Reuben Thorpe (2016)
+# Reuben Thorpe (2016), CodeEval [Digit Statistics v1.0]
 from sys import argv
 
 
@@ -6,16 +6,16 @@ def stats(a, n):
     values = pattern(a)
     lenR = sum(values)
     repeat = n/lenR
-    step1 = int(repeat)
-    step2 = int((repeat % 1)*lenR)
+    cycle = int(repeat)
+    cycleR = int((repeat % 1)*lenR)
 
-    # Step 1 : multiply by general repeat
-    values = [step1*value for value in values]
+    # Step 1 : Multiply unique remainder sequence by the number of cycles
+    values = [cycle*value for value in values]
 
-    # Step 2 : add remainders of repeat
-    if step2 != 0:
+    # Step 2 : Multiple unique remainder sequence by the cycle remainder
+    if cycleR != 0:
         m = a
-        for i in range(step2):
+        for i in range(cycleR):
             values[m] += 1
             m *= a
             m %= 10
@@ -27,7 +27,7 @@ def stats(a, n):
 
 
 def pattern(a):
-    # Finds repeat pattern in last digits of sequence
+    # Finds unique repeat in last digits of a^i sequence
     m = a
     seq = [0]*10
     while seq[m] == 0:

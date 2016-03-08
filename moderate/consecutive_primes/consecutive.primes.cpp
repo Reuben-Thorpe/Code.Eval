@@ -1,6 +1,6 @@
-//Reuben Thorpe (2016), CodeEval C++11 [Consecutive Primes v1.0]
+// Reuben Thorpe (2016), CodeEval [Consecutive Primes v1.0]
 //  N <= 18 : Highest sum is 18+17 = 35
-//  Use prime table up to 306
+//  Use prime table up to 31
 #include <iostream>
 #include <fstream>
 #include <algorithm>
