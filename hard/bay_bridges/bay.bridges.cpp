@@ -6,7 +6,23 @@
 
 using namespace std;
 
-bool popLargestVector(vector<vector<int>>& input, vector<int>& popVector) {
+class bayBridges {
+
+  public:
+    vector<vector<int>> results;
+    bayBridges(ifstream &inFile);
+    void optimise();
+
+  private:
+    vector<vector<float>> _mapping;
+    bool popLargestVector(vector<vector<int>> &input, vector<int> &popVector);
+    bool intersect(vector<float> A, vector<float> B, vector<float> C, vector<float> D);
+    bool ccw(vector<float> A, vector<float> B, vector<float> C);
+    void recordIntersects();
+};
+
+
+bool bayBridges::popLargestVector(vector<vector<int>> &input, vector<int> &popVector) {
   // Pops the largest sub vector in a vector
   // Returns false if all sub vectors are of size 1
   vector<int> sizeLedger(input.size());
@@ -36,7 +52,8 @@ bool popLargestVector(vector<vector<int>>& input, vector<int>& popVector) {
 }
 
 
-void optimalBridges(vector<vector<int>> &results) {
+void bayBridges::optimise() {
+  recordIntersects();
   vector<int> popVector;
 
   while (popLargestVector(results, popVector)) {
@@ -54,14 +71,14 @@ void optimalBridges(vector<vector<int>> &results) {
 }
 
 
-bool ccw(vector<float> A, vector<float> B, vector<float> C) {
+bool bayBridges::ccw(vector<float> A, vector<float> B, vector<float> C) {
   // Returns true if all 3 points are in counter clockwise order
   // http://bryceboe.com/2006/10/23/line-segment-intersection-algorithm/
   return((C[1]-A[1])*(B[0]-A[0]) > (B[1]-A[1])*(C[0]-A[0]));
 }
 
 
-bool intersect(vector<float> A, vector<float> B, vector<float> C, vector<float> D) {
+bool bayBridges::intersect(vector<float> A, vector<float> B, vector<float> C, vector<float> D) {
   // Returns true if the line AB & CD intersect, general case only
   // http://bryceboe.com/2006/10/23/line-segment-intersection-algorithm/
 
@@ -69,35 +86,35 @@ bool intersect(vector<float> A, vector<float> B, vector<float> C, vector<float> 
 }
 
 
-void recordIntersects(vector<vector<int>> &results, vector<vector<float>> mapping) {
+void bayBridges::recordIntersects() {
   // Find all line intersects and store in "results" in the form
   // {[pair designation],3,6,8,5,2} , where the the latter numbers are the bridges
   // the current pair designation intercepts with.
   vector<int> tmp;
   vector<float> A(2), B(2), C(2), D(2);
-  int nBridge = mapping.size();
+  int nBridge = _mapping.size();
   tmp.reserve(nBridge+1);
   results.reserve(nBridge);
 
   for (int i = 0; i < nBridge; i++) {
-    tmp.push_back(int(mapping[i][0])); // Capture bridge name
-    A[0] = mapping[i][1];
-    A[1] = mapping[i][2];
-    B[0] = mapping[i][3];
-    B[1] = mapping[i][4];
+    tmp.push_back(int(_mapping[i][0])); // Capture bridge name
+    A[0] = _mapping[i][1];
+    A[1] = _mapping[i][2];
+    B[0] = _mapping[i][3];
+    B[1] = _mapping[i][4];
 
     for (int j = 0; j < nBridge; j++) {
       if (j == i) {
         continue;
       }
       else {
-        C[0] = mapping[j][1];
-        C[1] = mapping[j][2];
-        D[0] = mapping[j][3];
-        D[1] = mapping[j][4];
+        C[0] = _mapping[j][1];
+        C[1] = _mapping[j][2];
+        D[0] = _mapping[j][3];
+        D[1] = _mapping[j][4];
 
         if (intersect(A, B, C, D)) {
-          tmp.push_back(int(mapping[j][0]));
+          tmp.push_back(int(_mapping[j][0]));
         }
       }
     }
@@ -107,8 +124,8 @@ void recordIntersects(vector<vector<int>> &results, vector<vector<float>> mappin
 }
 
 
-void parse(ifstream& inFile, vector<vector<float>>& mapping) {
-  // Parse all the bridges positional data into a container
+bayBridges::bayBridges(ifstream &inFile) {
+  // Parse all the bridges positional data into a container from stream
   float num, p1x, p1y, p2x, p2y;
   while (inFile.peek() != EOF) {
     inFile >> num;
@@ -120,7 +137,7 @@ void parse(ifstream& inFile, vector<vector<float>>& mapping) {
     inFile >> p2x;
     inFile.ignore(1);
     inFile >> p2y;
-    mapping.push_back({num, p1x, p1y, p2x, p2y});
+    _mapping.push_back({num, p1x, p1y, p2x, p2y});
     inFile.ignore(3, '\n');
   }
 }
@@ -128,14 +145,11 @@ void parse(ifstream& inFile, vector<vector<float>>& mapping) {
 
 int main(int argc, char* argv[]) {
   ifstream inFile(argv[1]);
-  vector<vector<float>> mapping;
-  vector<vector<int>> results;
 
-  parse(inFile, mapping);
-  recordIntersects(results, mapping);
-  optimalBridges(results);
+  bayBridges config(inFile);
+  config.optimise();
 
-  for (auto bridge: results) {
+  for (auto bridge: config.results) {
     cout << bridge[0] << "\n";
   }
 
