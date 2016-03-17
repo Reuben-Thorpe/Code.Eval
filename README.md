@@ -21,6 +21,7 @@ Longest Lines | moderate | 100
 Mth To Last Element | moderate | 100
 Sort Matrix Colums | moderate | 100
 Trailing String | moderate | 100
+Sum To Zero | moderate | 100
 Fibonacci Series | easy | 100
 File Size | easy | 100
 Fizz Buzz | easy | 100
@@ -31,6 +32,6 @@ Time To Eat | easy | 100
 Trick Or Treat | easy | 100
 Find The Highest Score | easy | 100
 Hex To Decimal | easy | 100
-
+Odd Numbers | easy | 100
 
 

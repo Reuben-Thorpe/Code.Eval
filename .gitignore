@@ -1,5 +1,8 @@
-# Remove standard compile file
+# Reuben Thorpe (2016), Bash, C, C++, Java, Python3
+
+# Remove standard output binaries
 run
+*.class
 
 # Remove test scripts and test inputs
 test.*
