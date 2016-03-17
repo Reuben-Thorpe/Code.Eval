@@ -3,6 +3,7 @@ Languages : Python3, C++, Java, Bash
 
 Name  | Mode | Score
 :--|:-:|--:
+As Quick As A Flash | hard | 100
 Bay Bridges | hard | 100
 Discount Offers | hard | 100
 Longest Common Subsequence | hard | 100
