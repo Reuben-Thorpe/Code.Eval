@@ -10,15 +10,16 @@ def getLongestCommonSub(a, b):
     """
     seeds = {char for char in a if char in b}
     while True:
-        if len(seeds) == 1:
-            break
+        if len(seeds) > 1:
+          seeds = {seed for seed in ("".join(search) for
+                   search in product(seeds, (i for i in a))) if
+                   check(a, seed) and check(b, seed)}
 
-        seeds = {seed for seed in ("".join(search) for
-                 search in product(seeds, (i for i in a))) if
-                 check(a, seed) and check(b, seed)}
+        else:
+          break
 
-    result = [result for result in seeds][0]
-    return(result)
+
+    return(seeds.pop())
 
 
 def check(string, sub):

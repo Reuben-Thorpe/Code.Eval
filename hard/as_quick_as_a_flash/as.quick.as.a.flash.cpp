@@ -6,32 +6,23 @@
 
 using namespace std;
 
-
-class qSort {
-
-  public:
-    int pivot_count = 0;
-    qSort(vector<int>& seq);
-
-  private:
-    void quick_sort(vector<int> seq, int begin, int end);
-    void swap(int& a, int& b);
-
-};
+int q_sort_pivots(vector<int> seq, int begin, int end);
+void swap(int& a, int& b);
 
 
 int main(int argc, char* argv[]) {
   ifstream inFile(argv[1]);
   vector<int> seq;
   seq.reserve(30); // Maximum number of elements
-  int num;
+  int num, N;
   string line;
 
   while (getline(inFile, line)) {
     stringstream ss;
     ss.str(line);
     while (ss >> num) seq.push_back(num);
-    cout << qSort(seq).pivot_count << "\n";
+    N = seq.size() - 1;
+    cout << q_sort_pivots(seq, 0, N) << "\n";
     seq.clear();
   }
 
@@ -39,15 +30,8 @@ int main(int argc, char* argv[]) {
 }
 
 
-qSort::qSort(vector<int>& seq) {
-  int N = seq.size() - 1;
-  quick_sort(seq, 0, N);
-}
-
-
-void qSort::quick_sort(vector<int> seq, int begin, int end) {
+int q_sort_pivots(vector<int> seq, int begin, int end) {
   if (begin < end) {
-    pivot_count += 1;
     int pivot = seq[begin];
     int pivot_pos = begin;
     int left = begin+1;
@@ -71,12 +55,14 @@ void qSort::quick_sort(vector<int> seq, int begin, int end) {
       }
     }
 
-    quick_sort(seq, begin, pivot_pos-1);
-    quick_sort(seq, pivot_pos+1, end);
+    return(1 + q_sort_pivots(seq, begin, pivot_pos-1) +
+           q_sort_pivots(seq, pivot_pos+1, end));
   }
+  else return(0);
 }
 
-void qSort::swap(int& a, int& b) {
+
+void swap(int& a, int& b) {
   int tmp = a;
   a = b;
   b = tmp;
