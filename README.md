@@ -1,5 +1,5 @@
 # My Code Eval solutions
-Languages : Python3, C++, Java, Bash
+Languages : Python3, C/C++, Bash, Java
 
 Name  | Mode | Score
 :--|:-:|--:
@@ -24,6 +24,7 @@ Sort Matrix Colums | moderate | 100
 Trailing String | moderate | 100
 Sum To Zero | moderate | 100
 Number Of Ones | moderate | 100
+Game Of Life | moderate | 100
 Fibonacci Series | easy | 100
 File Size | easy | 100
 Fizz Buzz | easy | 100
