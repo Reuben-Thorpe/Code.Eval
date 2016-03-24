@@ -25,6 +25,8 @@ Trailing String | moderate | 100
 Sum To Zero | moderate | 100
 Number Of Ones | moderate | 100
 Game Of Life | moderate | 100
+Card Number Validation | moderate | 100
+Minimum Coins | moderate | 100
 Fibonacci Series | easy | 100
 File Size | easy | 100
 Fizz Buzz | easy | 100
