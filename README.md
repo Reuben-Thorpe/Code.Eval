@@ -3,10 +3,10 @@ Languages : Bash, C, C++, Java, Python, R
 
 Name  | Mode | Language | Size
 :--|:-:|:-:|--:
-[Distinct Subsequences](./tree/master/01-hard/distinct_subsequences) | Hard | py, cpp, py | 1.31 MB 
+[Distinct Subsequences](/tree/master/01-hard/distinct_subsequences) | Hard | py, cpp, py | 1.31 MB 
 [As Quick As A Flash](../01-hard/as_quick_as_a_flash) | Hard | py, cpp | 1.24 MB 
-[String Searching](../tree/master/01-hard/string_searching) | Hard | py, sh | 371 B 
-[Discount Offers](../tree/master/01-hard/discount_offers) | Hard | py | 9.23 MB 
+[String Searching](tree/master/01-hard/string_searching) | Hard | py, sh | 371 B 
+[Discount Offers](01-hard/discount_offers) | Hard | py | 9.23 MB 
 [Longest Common Subsequence](../tree/master/01-hard/longest_common_subsequence) | Hard | py | 1.16 MB 
 [Digit Statistics](../tree/master/01-hard/digit_statistics) | Hard | cpp, py | 1.15 MB 
 [Palindromic Ranges](../tree/master/01-hard/palindromic_ranges) | Hard | py | 1.08 MB 
