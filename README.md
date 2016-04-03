@@ -3,7 +3,7 @@ Languages : Bash, C, C++, Java, Python, R
 
 Name  | Mode | Language | Size
 :--|:-:|:-:|--:
-[Distinct Subsequences](01-hard/distinct_subsequences) | Hard | py, cpp | 1.31 MB 
+[Distinct Subsequences](01-hard/distinct_subsequences) | Hard | py, cpp, py | 1.31 MB 
 [As Quick As A Flash](01-hard/as_quick_as_a_flash) | Hard | py, cpp | 1.24 MB 
 [String Searching](01-hard/string_searching) | Hard | py, sh | 371 B 
 [Discount Offers](01-hard/discount_offers) | Hard | py | 9.23 MB 
@@ -18,9 +18,9 @@ Name  | Mode | Language | Size
 [Consecutive Primes](02-moderate/consecutive_primes) | Moderate | cpp | 1.57 MB 
 [Minimum Coins](02-moderate/minimum_coins) | Moderate | py, cpp | 316 B 
 [Card Number Validation](02-moderate/card_number_validation) | Moderate | cpp, py | 484 B 
-[Sum To Zero](02-moderate/sum_to_zero) | Moderate | py | 490 B 
+[Sum To Zero](02-moderate/sum_to_zero) | Moderate | py, cpp | 490 B 
 [Mth To Last Element](02-moderate/mth_to_last_element) | Moderate | cpp, sh | 326 B 
-[Number Of 1S](02-moderate/number_of_1s) | Moderate | sh, py, cpp | 149 B 
+[Number Of 1S](02-moderate/number_of_1s) | Moderate | sh, java, py, cpp | 149 B 
 [Trailing String](02-moderate/trailing_string) | Moderate | cpp | 824 B 
 [Longest Lines](02-moderate/longest_lines) | Moderate | cpp, py | 307 B 
 [Game Of Life](02-moderate/game_of_life) | Moderate | py | 1.36 MB 
@@ -38,4 +38,4 @@ Name  | Mode | Language | Size
 [String Mask](03-easy/string_mask) | Easy | cpp | 544 B 
 [Reverse Words](03-easy/reverse_words) | Easy | java, py, cpp | 321 B 
 [File Size](03-easy/file_size) | Easy | sh, cpp, java, py | 81 B 
-[Clean Up The Words](03-easy/clean_up_the_words) | Easy | py | 287 B 
+[Clean Up The Words](03-easy/clean_up_the_words) | Easy | sh, py, cpp, py | 201 B 
