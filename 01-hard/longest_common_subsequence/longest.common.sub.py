@@ -14,6 +14,7 @@ def getLongestCommonSub(a, b):
           seeds = {seed for seed in ("".join(search) for
                    search in product(seeds, (i for i in a))) if
                    check(a, seed) and check(b, seed)}
+          print(seeds)
 
         else:
           break
