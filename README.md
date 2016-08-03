@@ -17,6 +17,7 @@ Name  | Mode | Language | Size
 [Distinct Subsequences](01-hard/distinct_subsequences) | Hard | py, cpp | 1.31 KB 
 [Distinct Triangles](01-hard/distinct_triangles) | Hard | py, cpp | 2.29 KB 
 [Dna Alignment](01-hard/dna_alignment) | Hard | py | 656 B 
+[Email Validation](02-moderate/email_validation) | Moderate | py | 455 B 
 [Fibonacci Series](03-easy/fibonacci_series) | Easy | sh, py, cpp | 269 B 
 [File Size](03-easy/file_size) | Easy | java, sh, py, cpp | 81 B 
 [Find A Square](02-moderate/find_a_square) | Moderate | py, cpp | 767 B 
@@ -32,7 +33,7 @@ Name  | Mode | Language | Size
 [Mth To Last Element](02-moderate/mth_to_last_element) | Moderate | sh, cpp | 326 B 
 [Multiplication Tables](03-easy/multiplication_tables) | Easy | py | 279 B 
 [Number Of 1S](02-moderate/number_of_1s) | Moderate | sh, py, cpp | 149 B 
-[Odd Numbers](03-easy/odd_numbers) | Easy | r, sh, c, cpp | 102 B 
+[Odd Numbers](03-easy/odd_numbers) | Easy | sh, r, cpp, c | 102 B 
 [Palindromic Ranges](01-hard/palindromic_ranges) | Hard | py | 1.08 KB 
 [Repeated Substring](01-hard/repeated_substring) | Hard | py | 690 B 
 [Reverse Words](03-easy/reverse_words) | Easy | java, sh, py, cpp | 180 B 
