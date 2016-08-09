@@ -10,7 +10,7 @@ Name  | Mode | Language | Size
 [Code Combinations](02-moderate/code_combinations) | Moderate | py | 1.02 KB 
 [Consecutive Primes](02-moderate/consecutive_primes) | Moderate | cpp | 1.57 KB 
 [Data Recovery](03-easy/data_recovery) | Easy | py | 758 B 
-[Decimal To Binary](02-moderate/decimal_to_binary) | Moderate | py, sh, java, cpp | 142 B 
+[Decimal To Binary](02-moderate/decimal_to_binary) | Moderate | java, py, sh, cpp | 142 B 
 [Decode Numbers](02-moderate/decode_numbers) | Moderate | py, cpp | 746 B 
 [Digit Statistics](01-hard/digit_statistics) | Hard | py, cpp | 1.15 KB 
 [Discount Offers](01-hard/discount_offers) | Hard | py | 9.23 KB 
@@ -19,9 +19,10 @@ Name  | Mode | Language | Size
 [Dna Alignment](01-hard/dna_alignment) | Hard | py | 656 B 
 [Email Validation](02-moderate/email_validation) | Moderate | py, sh, cpp | 455 B 
 [Fibonacci Series](03-easy/fibonacci_series) | Easy | py, sh, cpp | 269 B 
-[File Size](03-easy/file_size) | Easy | py, sh, java, cpp | 81 B 
+[File Size](03-easy/file_size) | Easy | java, py, sh, cpp | 81 B 
 [Find A Square](02-moderate/find_a_square) | Moderate | py, cpp | 767 B 
 [Find The Highest Score](03-easy/find_the_highest_score) | Easy | cpp | 1.12 KB 
+[First Non Repeated Character](02-moderate/first_non-repeated_character) | Moderate | py, sh, cpp | 267 B 
 [Fizz Buzz](03-easy/fizz_buzz) | Easy | cpp | 604 B 
 [Game Of Life](02-moderate/game_of_life) | Moderate | py | 1.36 KB 
 [Hex To Decimal](03-easy/hex_to_decimal) | Easy | sh, cpp | 140 B 
@@ -35,10 +36,11 @@ Name  | Mode | Language | Size
 [Number Of 1S](02-moderate/number_of_1s) | Moderate | py, sh, cpp | 149 B 
 [Number Pairs](02-moderate/number_pairs) | Moderate | py | 779 B 
 [Odd Numbers](03-easy/odd_numbers) | Easy | c, r, sh, cpp | 102 B 
+[Overlapping Rectangles](02-moderate/overlapping_rectangles) | Moderate | py | 1.01 KB 
 [Palindromic Ranges](01-hard/palindromic_ranges) | Hard | py | 1.08 KB 
 [Point In Circle](02-moderate/point_in_circle) | Moderate | py, cpp | 810 B 
 [Repeated Substring](01-hard/repeated_substring) | Hard | py | 690 B 
-[Reverse Words](03-easy/reverse_words) | Easy | py, sh, java, cpp | 180 B 
+[Reverse Words](03-easy/reverse_words) | Easy | java, py, sh, cpp | 180 B 
 [Seek For An Intruder](02-moderate/seek_for_an_intruder) | Moderate | py | 4.01 KB 
 [Sort Matrix Columns](02-moderate/sort_matrix_columns) | Moderate | py | 1.93 KB 
 [Stack Implementation](02-moderate/stack_implementation) | Moderate | py, sh, cpp | 322 B 
