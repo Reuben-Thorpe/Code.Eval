@@ -1,0 +1,6 @@
+Hello,lloHe
+Basefont,tBasefon
+Hello,Hello
+Hello,elloH
+Hello,olleH
+lelo,lole
