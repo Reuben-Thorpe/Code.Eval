@@ -11,7 +11,7 @@ Name  | Mode | Language | Size
 [Code Combinations](02-moderate/code_combinations) | Moderate | py | 1.02 KB 
 [Consecutive Primes](02-moderate/consecutive_primes) | Moderate | cpp | 1.57 KB 
 [Data Recovery](03-easy/data_recovery) | Easy | py | 758 B 
-[Decimal To Binary](02-moderate/decimal_to_binary) | Moderate | sh, py, java, cpp | 142 B 
+[Decimal To Binary](02-moderate/decimal_to_binary) | Moderate | java, sh, py, cpp | 142 B 
 [Decode Numbers](02-moderate/decode_numbers) | Moderate | py, cpp | 746 B 
 [Digit Statistics](01-hard/digit_statistics) | Hard | py, cpp | 1.15 KB 
 [Discount Offers](01-hard/discount_offers) | Hard | py | 9.23 KB 
@@ -20,13 +20,14 @@ Name  | Mode | Language | Size
 [Dna Alignment](01-hard/dna_alignment) | Hard | py | 656 B 
 [Email Validation](02-moderate/email_validation) | Moderate | sh, py, cpp | 455 B 
 [Fibonacci Series](03-easy/fibonacci_series) | Easy | sh, py, cpp | 269 B 
-[File Size](03-easy/file_size) | Easy | sh, py, java, cpp | 81 B 
+[File Size](03-easy/file_size) | Easy | java, sh, py, cpp | 81 B 
 [Find A Square](02-moderate/find_a_square) | Moderate | py, cpp | 767 B 
 [Find The Highest Score](03-easy/find_the_highest_score) | Easy | cpp | 1.12 KB 
 [First Non Repeated Character](02-moderate/first_non-repeated_character) | Moderate | sh, py, cpp | 267 B 
 [Fizz Buzz](03-easy/fizz_buzz) | Easy | cpp | 604 B 
 [Flavius Josephus](02-moderate/flavius_josephus) | Moderate | py | 1.31 KB 
 [Game Of Life](02-moderate/game_of_life) | Moderate | py | 1.36 KB 
+[Happy Numbers](03-easy/happy_numbers) | Easy | sh, py, cpp, c | 864 B 
 [Hex To Decimal](03-easy/hex_to_decimal) | Easy | sh, cpp | 140 B 
 [Interrupted Bubble Sort](02-moderate/interrupted_bubble_sort) | Moderate | py | 1.03 KB 
 [Longest Common Subsequence](01-hard/longest_common_subsequence) | Hard | py | 1.19 KB 
@@ -38,7 +39,7 @@ Name  | Mode | Language | Size
 [N Mod M](03-easy/n_mod_m) | Easy | sh | 196 B 
 [Number Of 1S](02-moderate/number_of_1s) | Moderate | sh, py, cpp | 149 B 
 [Number Pairs](02-moderate/number_pairs) | Moderate | py | 779 B 
-[Odd Numbers](03-easy/odd_numbers) | Easy | sh, r, cpp, c | 102 B 
+[Odd Numbers](03-easy/odd_numbers) | Easy | r, sh, cpp, c | 102 B 
 [Overlapping Rectangles](02-moderate/overlapping_rectangles) | Moderate | py | 1.01 KB 
 [Palindromic Ranges](01-hard/palindromic_ranges) | Hard | py | 1.08 KB 
 [Pangrams](02-moderate/pangrams) | Moderate | py, cpp | 568 B 
@@ -46,7 +47,7 @@ Name  | Mode | Language | Size
 [Point In Circle](02-moderate/point_in_circle) | Moderate | py, cpp | 810 B 
 [Remove Characters](02-moderate/remove_characters) | Moderate | sh, py, cpp | 224 B 
 [Repeated Substring](01-hard/repeated_substring) | Hard | py | 690 B 
-[Reverse Words](03-easy/reverse_words) | Easy | sh, py, java, cpp | 180 B 
+[Reverse Words](03-easy/reverse_words) | Easy | java, sh, py, cpp | 180 B 
 [Seek For An Intruder](02-moderate/seek_for_an_intruder) | Moderate | py | 4.01 KB 
 [Sort Matrix Columns](02-moderate/sort_matrix_columns) | Moderate | py | 1.93 KB 
 [Stack Implementation](02-moderate/stack_implementation) | Moderate | sh, py, cpp | 322 B 
