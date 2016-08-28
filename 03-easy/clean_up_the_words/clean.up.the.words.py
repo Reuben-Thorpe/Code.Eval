@@ -1,4 +1,4 @@
-# Reuben Thorpe (2016), CodeEval [Clean Up Words v1.1]
+# Reuben Thorpe (2016), CodeEval [Clean Up Words v1.0]
 from sys import argv
 
 
