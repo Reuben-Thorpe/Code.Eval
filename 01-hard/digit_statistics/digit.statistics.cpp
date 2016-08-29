@@ -1,4 +1,4 @@
-// Reuben Thorpe (2016), CodeEval [Digit Statistics v1.0]
+// Reuben Thorpe (2016), CodeEval [Digit Statistics v1.1]
 #include <iostream>
 #include <fstream>
 #include <vector>

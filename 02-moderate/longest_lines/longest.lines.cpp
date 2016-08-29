@@ -1,4 +1,4 @@
-// Reuben Thorpe (2016), CodeEval [Longest Lines v1.2]
+// Reuben Thorpe (2016), CodeEval [Longest Lines v1.1]
 #include <iostream>
 #include <string>
 #include <sstream>
